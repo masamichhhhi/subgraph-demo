@@ -1,0 +1,15 @@
+type Pool @entity {
+  id: ID!
+  token: Bytes!
+  rewardToken: Bytes!
+  totalSupply: BigDecimal!
+  depositCount: BigInt!
+}
+
+type StakingPool @entity {
+  id: ID!
+  token: Bytes!
+  rewardToken: Bytes!
+  totalSupply: BigDecimal!
+  stakeCount: BigInt!
+}
